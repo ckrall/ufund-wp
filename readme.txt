@@ -1,3 +1,7 @@
+===UFund===
+Author: Corey Krall
+Description: Custom theme based on Bootstrap Basic theme
+
 ===Bootstrap Basic===
 Author: Vee Winch
 Author URI: http://rundiz.com
