@@ -138,3 +138,123 @@ Required WordPress CSS
 	width: auto;
 	z-index: 100000; /* Above WP toolbar. */
 }
+
+
+/* -------------------------------------------------------------------------------- */
+/* UFUND THEME STYLES */
+
+/* ------------------------------------------------------------ */
+/* --- STYLES --- */
+/* ------------------------------------------------------------ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body { padding-top: 50px; padding-bottom:100px; }
+
+footer {
+	min-height: 50px;
+	max-height: 50px;
+	margin-top: 20px;
+	padding:3px 0 0 0;
+	background-color:#e6e6e6;
+	border: 1px solid transparent;
+}
+.footer-fixed-bottom { border-radius:0; position:fixed; right:0; bottom:0; left:0; z-index: 1030 }
+footer .copy { padding:10px 40px; }
+
+
+
+/* ------------------------------------------------------------ */
+/* --- GRID STYLES --- */
+
+.row { margin-bottom: 20px; }
+.row .row { margin-top: 10px; margin-bottom: 0; }
+/*
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+}
+*/
+hr { margin-top: 20px; margin-bottom: 20px; }
+
+
+
+/* ------------------------------------------------------------ */
+/* --- NAVBAR STYLES --- */
+
+.navbar {
+	min-height: auto;
+	max-height: 50px;
+	margin-bottom: 20px;
+	padding:3px 0 0 0;
+	border: 1px solid transparent;
+}
+body.logged-in.admin-bar .navbar { margin-top:32px; } /* accommodating WP admin bar */
+.navbar-default {
+	background-color: #ffffff;
+	border-color: #ffffff;
+	border-bottom-color: #ffaa00;
+}
+.navbar-brand { margin:0; padding:0; }
+.navbar-brand img { margin:0; padding:0; height:35px; width:auto; }
+.site-description { white-space:nowrap; }
+
+
+/* ------------------------------------------------------------ */
+/* --- JUMBOTRON STYLES --- */
+
+.jumbotron { overflow:hidden; padding-top:0; padding-bottom:0; background:#bf9643 url(/wp-content/themes/ufund-wp/img/home-jumbotron-back.jpg) no-repeat; }
+.jumbotron .container { background:url(/wp-content/themes/ufund-wp/img/home-jumbotron.jpg) no-repeat; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
+.jumbotron .container h1 { margin:40px 0 40px 20px;; color:#ffffff; font-weight:900; letter-spacing:-2px; word-spacing:0; }
+.jumbotron .container h1 sup { color:#ffffff; font-size:50%; font-weight:200; }
+.jumbotron .cell { text-align:center; }
+.jumbotron .cell img { width:200px; }
+.jumbotron .cell .btn-primary { background-image:none; }
+.jumbotron .cell .btn-lg { font-size:110%; font-weight:700; }
+.jumbotron .cell .btn-home { background-color:#ffaa00; border-color:#ffaa00; }
+.jumbotron .alert { color: #ffffff; background-color: rgba(0,0,0,0.5); border-color: #000000; font-size:18px; line-height:1.5; }
+
+
+
+/* ------------------------------------------------------------ */
+/* --- PANEL STYLES --- */
+
+.panel.campaign { border-color:#e6e6e6; border-radius:12px; box-shadow: 3px 3px 3px rgba(0, 0, 0, .05); }
+.panel.step { border-color:#e6e6e6; border-radius:12px; box-shadow: 3px 3px 3px rgba(0, 0, 0, .05); }
+
+.campaign-org { text-align:center; }
+.campaign-goal { font-size:200%; font-weight:bolder; text-align:center; }
+.campaign-copy { padding:20px; }
+
+.campaign .progress { margin-bottom:0; }
+.campaign .progress-bar-info { background-color:#0073ba; }
+
+.step-img { width:150px; }
+.half-block { width:50%; }
+.work-intro h2 { margin-bottom:20px; }
+.work-intro .step-img { float:left; margin-right:30px; }
+.work-steps .step-num { margin-top:-15px; font-size:200%; font-weight:700; }
+.work-steps .step-img { display:block; margin:0 auto; text-align:center; }
+
+
+
+/* ------------------------------------------------------------ */
+/* --- * STYLES --- */
+
+.hidden { display:none; }
+
+.no-line { text-decoration:none; }
+a:hover.no-line { text-decoration:none; }
+
+.br { display:block; }
+
+.float-right { float:right; }
+.float-left { float:left; }
+
+.btn-donate {}
+.btn-donate:active { background-color:lime; }
+
+

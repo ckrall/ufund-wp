@@ -28,15 +28,47 @@
 
 
 
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
+            <span class="sr-only"><?php _e('Toggle navigation', 'bootstrap-basic'); ?></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+						<!--<h1 class="site-title-heading">-->
+							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
+							  <img src="/wp-content/themes/ufund-wp/img/logo.svg" alt="UFund" title="UFund" />
+							  <!-- <?php bloginfo('name'); ?> -->
+							</a>
+						<!--</h1>-->
+						<div class="site-description">
+              <?php bloginfo('description'); ?>
+						</div>
+        </div>
+        <div class="collapse navbar-collapse navbar-primary-collapse">
+          <?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav nav-pills pull-right', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
+          <?php dynamic_sidebar('navbar-right'); ?>
+        </div><!--.navbar-collapse-->
+      </div>
+    </nav>
 
 
+
+    <!--
 		<div class="container page-container">
 			<?php do_action('before'); ?>
+    -->
+
+      <!--
 			<header role="banner">
+
 				<div class="row row-with-vspace site-branding">
+
 					<div class="col-md-6 site-title">
 						<h1 class="site-title-heading">
-							<a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
+							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home"><?php bloginfo('name'); ?></a>
 						</h1>
 						<div class="site-description">
 							<small>
@@ -44,6 +76,7 @@
 							</small>
 						</div>
 					</div>
+
 					<div class="col-md-6 page-header-top-right">
 						<div class="sr-only">
 							<a href="#content" title="<?php esc_attr_e('Skip to content', 'bootstrap-basic'); ?>"><?php _e('Skip to content', 'bootstrap-basic'); ?></a>
@@ -55,10 +88,12 @@
 						<div class="clearfix"></div>
 						<?php } // endif; ?>
 					</div>
-				</div><!--.site-branding-->
+
+				</div>
 
 				<div class="row main-navigation">
 					<div class="col-md-12">
+
 						<nav class="navbar navbar-default" role="navigation">
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-primary-collapse">
@@ -72,11 +107,17 @@
 							<div class="collapse navbar-collapse navbar-primary-collapse">
 								<?php wp_nav_menu(array('theme_location' => 'primary', 'container' => false, 'menu_class' => 'nav navbar-nav', 'walker' => new BootstrapBasicMyWalkerNavMenu())); ?>
 								<?php dynamic_sidebar('navbar-right'); ?>
-							</div><!--.navbar-collapse-->
+							</div>
 						</nav>
+
 					</div>
-				</div><!--.main-navigation-->
+				</div>
+
 			</header>
+			-->
 
-
+      <!--
 			<div id="content" class="row row-with-vspace site-content">
+      -->
+
+    <div>
