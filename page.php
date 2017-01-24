@@ -13,8 +13,17 @@ get_header();
 $main_column_size = bootstrapBasicGetMainColumnSize();
 ?>
 <?php get_sidebar('left'); ?>
-				<div class="col-md-<?php echo $main_column_size; ?> content-area" id="main-column">
-					<main id="main" class="site-main" role="main">
+
+      <div class="container">
+
+        <h1> <?php echo get_field('title'); ?> </h1>
+
+      <div class="row campaign-content">
+        <div class="col-md-12" role="main">
+
+					<div class="panel panel-default campaign">
+						<div class="panel-body campaign-copy">
+
 						<?php
 						while (have_posts()) {
 							the_post();
@@ -24,15 +33,20 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 							echo "\n\n";
 
 							// If comments are open or we have at least one comment, load up the comment template
-							if (comments_open() || '0' != get_comments_number()) {
-								comments_template();
-							}
+							//if (comments_open() || '0' != get_comments_number()) {
+							//	comments_template();
+							//}
 
-							echo "\n\n";
+							//echo "\n\n";
 
 						} //endwhile;
 						?>
-					</main>
+
+					  </div>
+				  </div>
+
 				</div>
+
 <?php get_sidebar('right'); ?>
+
 <?php get_footer(); ?>

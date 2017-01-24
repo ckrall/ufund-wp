@@ -4,7 +4,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?> 
+		<?php the_content(); ?>
 		<div class="clearfix"></div>
 		<?php
 		/**
@@ -18,8 +18,10 @@
 		));
 		?>
 	</div><!-- .entry-content -->
-	
+
+<!--
 	<footer class="entry-meta">
-		<?php bootstrapBasicEditPostLink(); ?> 
+		<?php bootstrapBasicEditPostLink(); ?>
 	</footer>
+-->
 </article><!-- #post-## -->
