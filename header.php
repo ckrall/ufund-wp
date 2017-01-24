@@ -37,14 +37,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-						<!--<h1 class="site-title-heading">-->
+						<div class="navbar-logo">
 							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
 							  <img src="/wp-content/themes/ufund-wp/img/logo.svg" alt="UFund" title="UFund" />
-							  <!-- <?php bloginfo('name'); ?> -->
 							</a>
-						<!--</h1>-->
-						<div class="site-description">
-              <?php bloginfo('description'); ?>
+              <span class="navbar-description">
+                <?php bloginfo('description'); ?>
+              </span>
 						</div>
         </div>
         <div class="collapse navbar-collapse navbar-primary-collapse">

@@ -189,21 +189,24 @@ hr { margin-top: 20px; margin-bottom: 20px; }
 /* --- NAVBAR STYLES --- */
 
 .navbar {
-	min-height: auto;
+	height: 50px;
 	max-height: 50px;
 	margin-bottom: 20px;
-	padding:3px 0 0 0;
+	padding:0 0 0 0;
 	border: 1px solid transparent;
 }
 body.logged-in.admin-bar .navbar { margin-top:32px; } /* accommodating WP admin bar */
+.navbar .container { padding:3px; }
+
 .navbar-default {
 	background-color: #ffffff;
 	border-color: #ffffff;
 	border-bottom-color: #ffaa00;
 }
-.navbar-brand { margin:0; padding:0; }
+.navbar-logo { height:35px; }
+.navbar-brand { float:none; display:inline-block; margin:0 !important; padding:0 !important; height:35px; }
 .navbar-brand img { margin:0; padding:0; height:35px; width:auto; }
-.site-description { white-space:nowrap; }
+.navbar-description { display:inline-block; margin:0 15px; padding:0; color:#aaaaaa; font-size:18px; font-style:italic; }
 
 
 /* ------------------------------------------------------------ */
