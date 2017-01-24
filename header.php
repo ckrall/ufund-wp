@@ -39,7 +39,7 @@
           </button>
 						<div class="navbar-logo">
 							<a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-							  <img src="/wp-content/themes/ufund-wp/img/logo.svg" alt="UFund" title="UFund" />
+							  <img src="<?php echo get_theme_file_uri( 'img/logo.svg' );?>" alt="UFund" title="UFund" />
 							</a>
               <span class="navbar-description">
                 <?php bloginfo('description'); ?>

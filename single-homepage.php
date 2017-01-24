@@ -67,13 +67,13 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
           <div class="row">
             <div class="col-md-6 cell">
               <a class="btn" href="<?php echo get_field('homepage_callout_1_button_url'); ?>" role="button">
-                <img class="" src="/wp-content/themes/ufund-wp/img/home-jumbotron-start.svg" alt="" title="" />
+                <img class="" src="<?php echo get_theme_file_uri( 'img/home-jumbotron-start.svg' );?>" alt="" title="" />
               </a>
               <p><a class="btn btn-primary btn-lg btn-home" href="#" role="button"> <?php echo get_field('homepage_callout_1_button_label'); ?> </a></p>
             </div> <!-- /column -->
             <div class="col-md-6 cell">
               <a class="btn" href="<?php echo get_field('homepage_callout_2_button_url'); ?>" role="button">
-                <img class="" src="/wp-content/themes/ufund-wp/img/home-jumbotron-find.svg" alt="" title="" />
+                <img class="" src="<?php echo get_theme_file_uri( 'img/home-jumbotron-find.svg' );?>" alt="" title="" />
               </a>
               <p><a class="btn btn-primary btn-lg btn-home" href="#" role="button"> <?php echo get_field('homepage_callout_2_button_label'); ?> </a></p>
             </div> <!-- /column -->
@@ -91,7 +91,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <a class="no-line" href="template-page-campaign-home.html">
               <div class="panel panel-default campaign">
                 <div class="panel-body">
-                  <img src="img/img.png" alt="" title="" width="100%" height="100%" />
+                  <img src="<?php echo get_theme_file_uri( 'img/img.png' );?>" alt="" title="" width="100%" height="100%" />
                   <p class="campaign-org">Organization Name</p>
                   <p class="campaign-goal">$88,888</p>
                   <div class="progress">
@@ -107,7 +107,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <a class="no-line" href="template-page-campaign-home.html">
               <div class="panel panel-default campaign">
                 <div class="panel-body">
-                  <img src="img/img.png" alt="" title="" width="100%" height="100%" />
+                  <img src="<?php echo get_theme_file_uri( 'img/img.png' );?>" alt="" title="" width="100%" height="100%" />
                   <p class="campaign-org">Organization Name</p>
                   <p class="campaign-goal">$88,888</p>
                   <div class="progress">
@@ -123,7 +123,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <a class="no-line" href="template-page-campaign-home.html">
               <div class="panel panel-default campaign">
                 <div class="panel-body">
-                  <img src="img/img.png" alt="" title="" width="100%" height="100%" />
+                  <img src="<?php echo get_theme_file_uri( 'img/img.png' );?>" alt="" title="" width="100%" height="100%" />
                   <p class="campaign-org">Organization Name</p>
                   <p class="campaign-goal">$88,888</p>
                   <div class="progress">
@@ -139,7 +139,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <a class="no-line" href="template-page-campaign-home.html">
               <div class="panel panel-default campaign">
                 <div class="panel-body">
-                  <img src="img/img.png" alt="" title="" width="100%" height="100%" />
+                  <img src="<?php echo get_theme_file_uri( 'img/img.png' );?>" alt="" title="" width="100%" height="100%" />
                   <p class="campaign-org">Organization Name</p>
                   <p class="campaign-goal">$88,888</p>
                   <div class="progress">
@@ -160,7 +160,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
         <div class="row work-intro">
           <div class="col-md-12">
             <h2>How it Works</h2>
-            <img class="step-img" src="/wp-content/themes/ufund-wp/img/home-howitworks-0.svg" alt="" title="" />
+            <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-0.svg' );?>" alt="" title="" />
             <p class="half-block"><?php echo get_field('homepage_howitworks_intro'); ?></p>
           </div> <!-- /column -->
         </div> <!-- /row -->
@@ -170,7 +170,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <div class="panel panel-default step">
               <div class="panel-body">
                 <div class="step-num">1</div>
-                <img class="step-img" src="/wp-content/themes/ufund-wp/img/home-howitworks-1.svg" alt="" title="" />
+                <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-1.svg' );?>" alt="" title="" />
                 <p><?php echo get_field('howitworks_step_1'); ?></p>
               </div>
             </div>
@@ -179,7 +179,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <div class="panel panel-default step">
               <div class="panel-body">
                 <div class="step-num">2</div>
-                <img class="step-img" src="/wp-content/themes/ufund-wp/img/home-howitworks-2.svg" alt="" title="" />
+                <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-2.svg' );?>" alt="" title="" />
                 <p><?php echo get_field('howitworks_step_2'); ?></p>
               </div>
             </div>
@@ -188,7 +188,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <div class="panel panel-default step">
               <div class="panel-body">
                 <div class="step-num">3</div>
-                <img class="step-img" src="/wp-content/themes/ufund-wp/img/home-howitworks-3.svg" alt="" title="" />
+                <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-3.svg' );?>" alt="" title="" />
                 <p><?php echo get_field('howitworks_step_3'); ?></p>
               </div>
             </div>
@@ -197,7 +197,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
             <div class="panel panel-default step">
               <div class="panel-body">
                 <div class="step-num">4</div>
-                <img class="step-img" src="/wp-content/themes/ufund-wp/img/home-howitworks-4.svg" alt="" title="" />
+                <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-4.svg' );?>" alt="" title="" />
                 <p><?php echo get_field('howitworks_step_4'); ?></p>
               </div>
             </div>
