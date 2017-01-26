@@ -16,36 +16,39 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 
       <div class="container">
 
-        <h1> <?php echo get_field('title'); ?> </h1>
+        <h1> <?php wp_title(''); ?> </h1>
 
-      <div class="row campaign-content">
-        <div class="col-md-12" role="main">
+        <div class="row campaign-content">
 
-					<div class="panel panel-default campaign">
-						<div class="panel-body campaign-copy">
+          <div class="col-md-12" role="main">
 
-						<?php
-						while (have_posts()) {
-							the_post();
+            <div class="panel panel-default campaign">
 
-							get_template_part('content', 'page');
+              <div class="panel-body campaign-copy">
 
-							echo "\n\n";
+              <?php
+                while (have_posts()) {
+                  the_post();
 
-							// If comments are open or we have at least one comment, load up the comment template
-							//if (comments_open() || '0' != get_comments_number()) {
-							//	comments_template();
-							//}
+                  get_template_part('content', 'page');
 
-							//echo "\n\n";
+                  echo "\n\n";
 
-						} //endwhile;
-						?>
+                  // If comments are open or we have at least one comment, load up the comment template
+                  if (comments_open() || '0' != get_comments_number()) {
+                  	comments_template();
+                  }
 
-					  </div>
-				  </div>
+                  echo "\n\n";
 
-				</div>
+                } //endwhile;
+              ?>
+
+              </div>
+
+            </div>
+
+          </div>
 
 <?php get_sidebar('right'); ?>
 
