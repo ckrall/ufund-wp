@@ -207,6 +207,7 @@ require get_template_directory() . '/inc/template-widgets-hook.php';
 /* -------------------------------------------------------------------------------- */
 /* CUSTOM TYPES */
 
+/*
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -368,12 +369,12 @@ if(function_exists("register_field_group"))
 		'menu_order' => 2,
 	));
 }
+*/
 
+/*
 function homepage() {
 
-	/**
-	 * Post Type: Homepages.
-	 */
+	 // Post Type: Homepages.
 
 	$labels = array(
 		"name" => __( 'Homepages', 'bootstrap-basic' ),
@@ -417,7 +418,7 @@ function homepage() {
 		"map_meta_cap" => true,
 		"hierarchical" => false,
 		"rewrite" => true,
-		/*"rewrite" => array( "slug" => "homepage", "with_front" => true ),*/
+		//"rewrite" => array( "slug" => "homepage", "with_front" => true ),
 		"query_var" => true,
 		"supports" => array( "title", "editor", "thumbnail", "revisions", "author", "page-attributes", "post-formats" ),
 	);
@@ -427,4 +428,4 @@ function homepage() {
 }
 
 add_action( 'init', 'homepage' );
-
+*/
