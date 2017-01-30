@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying pages
+ * Template for displaying homepages
  * Template Name: Homepage
  *
  * @package ufund-wp
