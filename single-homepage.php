@@ -29,8 +29,6 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
       $intro = get_the_content();
       $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full' );
       $feature = $featured_image[0];
-      $callouticon1 = get_field('homepage_callout_1_icon');
-      $callouticon2 = get_field('homepage_callout_2_icon');
       // Output
 ?>
 
@@ -48,8 +46,6 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
 <!-- <?php echo get_field('homepage_callout_2_icon'); ?> -->
 <!-- <?php echo get_field('homepage_callout_2_button_label'); ?> -->
 <!-- <?php echo get_field('homepage_callout_2_button_url'); ?> -->
-
-<!-- <?php echo $intro; ?> -->
 
 <!-- <?php echo get_field('homepage_howitworks_intro'); ?> -->
 <!-- <?php echo get_field('howitworks_step_1'); ?> -->
@@ -69,16 +65,16 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
               <a class="btn" href="<?php echo get_field('homepage_callout_1_button_url'); ?>" role="button">
                 <img class="" src="<?php echo get_theme_file_uri( 'img/home-jumbotron-start.svg' );?>" alt="" title="" />
               </a>
-              <p><a class="btn btn-primary btn-lg btn-home" href="#" role="button"> <?php echo get_field('homepage_callout_1_button_label'); ?> </a></p>
+              <p class="lbl"><a class="btn btn-primary btn-lg btn-home" href="#" role="button"> <?php echo get_field('homepage_callout_1_button_label'); ?> </a></p>
             </div> <!-- /column -->
             <div class="col-md-6 cell">
               <a class="btn" href="<?php echo get_field('homepage_callout_2_button_url'); ?>" role="button">
                 <img class="" src="<?php echo get_theme_file_uri( 'img/home-jumbotron-find.svg' );?>" alt="" title="" />
               </a>
-              <p><a class="btn btn-primary btn-lg btn-home" href="#" role="button"> <?php echo get_field('homepage_callout_2_button_label'); ?> </a></p>
+              <p class="lbl"><a class="btn btn-primary btn-lg btn-home" href="#" role="button"> <?php echo get_field('homepage_callout_2_button_label'); ?> </a></p>
             </div> <!-- /column -->
           </div> <!-- /row -->
-          <div class="alert" role="alert"> <?php echo $intro; ?> </div>
+          <div class="alert" role="alert"> <?php the_content() ?> </div>
         </div>
       </div> <!-- /jumbotron -->
 
@@ -171,7 +167,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
               <div class="panel-body">
                 <div class="step-num">1</div>
                 <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-1.svg' );?>" alt="" title="" />
-                <p><?php echo get_field('howitworks_step_1'); ?></p>
+                <p class="step-copy"><?php echo get_field('howitworks_step_1'); ?></p>
               </div>
             </div>
           </div> <!-- /column -->
@@ -180,7 +176,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
               <div class="panel-body">
                 <div class="step-num">2</div>
                 <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-2.svg' );?>" alt="" title="" />
-                <p><?php echo get_field('howitworks_step_2'); ?></p>
+                <p class="step-copy"><?php echo get_field('howitworks_step_2'); ?></p>
               </div>
             </div>
           </div> <!-- /column -->
@@ -189,7 +185,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
               <div class="panel-body">
                 <div class="step-num">3</div>
                 <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-3.svg' );?>" alt="" title="" />
-                <p><?php echo get_field('howitworks_step_3'); ?></p>
+                <p class="step-copy"><?php echo get_field('howitworks_step_3'); ?></p>
               </div>
             </div>
           </div> <!-- /column -->
@@ -198,7 +194,7 @@ $main_column_size = bootstrapBasicGetMainColumnSize();
               <div class="panel-body">
                 <div class="step-num">4</div>
                 <img class="step-img" src="<?php echo get_theme_file_uri( 'img/home-howitworks-4.svg' );?>" alt="" title="" />
-                <p><?php echo get_field('howitworks_step_4'); ?></p>
+                <p class="step-copy"><?php echo get_field('howitworks_step_4'); ?></p>
               </div>
             </div>
           </div> <!-- /column -->

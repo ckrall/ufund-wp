@@ -30,16 +30,12 @@ Required WordPress CSS
 	float: right;
 	margin-left: 1.5em;
 }
-.bypostauthor {
-}
+.bypostauthor {}
 
 
 /* WordPress gallery */
-.gallery-caption {
-}
-.gallery {
-	margin-bottom: 1.6em;
-}
+.gallery-caption {}
+.gallery { margin-bottom: 1.6em; }
 .gallery-item {
 	display: inline-block;
 	padding: 1.79104477%;
@@ -47,33 +43,15 @@ Required WordPress CSS
 	vertical-align: top;
 	width: 100%;
 }
-.gallery-columns-2 .gallery-item {
-	max-width: 50%;
-}
-.gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
-}
-.gallery-columns-4 .gallery-item {
-	max-width: 25%;
-}
-.gallery-columns-5 .gallery-item {
-	max-width: 20%;
-}
-.gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
-}
-.gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
-}
-.gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
-}
-.gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
-}
-.gallery-icon img {
-	margin: 0 auto;
-}
+.gallery-columns-2 .gallery-item { max-width: 50%; }
+.gallery-columns-3 .gallery-item { max-width: 33.33%; }
+.gallery-columns-4 .gallery-item { max-width: 25%; }
+.gallery-columns-5 .gallery-item { max-width: 20%; }
+.gallery-columns-6 .gallery-item { max-width: 16.66%; }
+.gallery-columns-7 .gallery-item { max-width: 14.28%; }
+.gallery-columns-8 .gallery-item { max-width: 12.5%; }
+.gallery-columns-9 .gallery-item { max-width: 11.11%; }
+.gallery-icon img { margin: 0 auto; }
 .gallery-caption {
 	color: #707070;
 	color: rgba(51, 51, 51, 0.7);
@@ -87,13 +65,10 @@ Required WordPress CSS
 .gallery-columns-6 .gallery-caption,
 .gallery-columns-7 .gallery-caption,
 .gallery-columns-8 .gallery-caption,
-.gallery-columns-9 .gallery-caption {
-	display: none;
-}
+.gallery-columns-9 .gallery-caption { display: none; }
 
 
-.sticky {
-}
+.sticky {}
 .wp-caption {
 	border: 1px solid #ccc;
 	margin-bottom: 1.5em;
@@ -104,12 +79,9 @@ Required WordPress CSS
 	margin: 1.2% auto 0;
 	max-width: 98%;
 }
-.wp-caption-text {
-	text-align: center;
-}
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
-}
+.wp-caption-text { text-align: center; }
+.wp-caption .wp-caption-text { margin: 0.8075em 0; }
+
 /* Text meant only for screen readers. */
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
@@ -118,7 +90,6 @@ Required WordPress CSS
 	width: 1px;
 	overflow: hidden;
 }
-
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
@@ -140,12 +111,13 @@ Required WordPress CSS
 }
 
 
+
 /* -------------------------------------------------------------------------------- */
 /* UFUND THEME STYLES */
+/* -------------------------------------------------------------------------------- */
 
 /* ------------------------------------------------------------ */
 /* --- STYLES --- */
-/* ------------------------------------------------------------ */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
 body { padding-top: 50px; padding-bottom:100px; }
@@ -209,6 +181,7 @@ body.logged-in.admin-bar .navbar { margin-top:32px; } /* accommodating WP admin 
 .navbar-description { display:inline-block; margin:0 15px; padding:0; color:#aaaaaa; font-size:18px; font-style:italic; }
 
 
+
 /* ------------------------------------------------------------ */
 /* --- JUMBOTRON STYLES --- */
 /* <?php echo get_theme_file_uri( 'img/' );?> */
@@ -219,9 +192,11 @@ body.logged-in.admin-bar .navbar { margin-top:32px; } /* accommodating WP admin 
 .jumbotron .container h1 sup { color:#ffffff; font-size:50%; font-weight:200; }
 .jumbotron .cell { text-align:center; }
 .jumbotron .cell img { width:200px; }
+.jumbotron .cell .btn {}
 .jumbotron .cell .btn-primary { background-image:none; }
 .jumbotron .cell .btn-lg { font-size:110%; font-weight:700; }
 .jumbotron .cell .btn-home { background-color:#ffaa00; border-color:#ffaa00; }
+.jumbotron .cell .lbl { margin-top:10px; }
 .jumbotron .alert { color: #ffffff; background-color: rgba(0,0,0,0.5); border-color: #000000; font-size:18px; line-height:1.5; }
 
 
@@ -245,11 +220,12 @@ body.logged-in.admin-bar .navbar { margin-top:32px; } /* accommodating WP admin 
 .work-intro .step-img { float:left; margin-right:30px; }
 .work-steps .step-num { margin-top:-15px; font-size:200%; font-weight:700; }
 .work-steps .step-img { display:block; margin:0 auto; text-align:center; }
+.work-steps .step-copy { display:block; margin-top:40px; }
 
 
 
 /* ------------------------------------------------------------ */
-/* --- * STYLES --- */
+/* --- STYLES --- */
 
 .hidden { display:none; }
 
@@ -263,5 +239,3 @@ a:hover.no-line { text-decoration:none; }
 
 .btn-donate {}
 .btn-donate:active { background-color:lime; }
-
-
