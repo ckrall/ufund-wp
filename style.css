@@ -187,7 +187,8 @@ body.logged-in.admin-bar .navbar { margin-top:32px; } /* accommodating WP admin 
 /* <?php echo get_theme_file_uri( 'img/' );?> */
 
 .jumbotron { overflow:hidden; padding-top:0; padding-bottom:0; background:#bf9643 url(img/home-jumbotron-back.jpg) no-repeat; }
-.jumbotron .container { background:url(img/home-jumbotron.jpg) no-repeat; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
+.jumbotron .container { background:#000000 url(img/home-jumbotron.jpg) no-repeat; background-size:100%; box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); }
+
 .jumbotron .container h1 { margin:40px 0 40px 20px;; color:#ffffff; font-weight:900; letter-spacing:-2px; word-spacing:0; }
 .jumbotron .container h1 sup { color:#ffffff; font-size:50%; font-weight:200; }
 .jumbotron .cell { text-align:center; }
@@ -239,3 +240,62 @@ a:hover.no-line { text-decoration:none; }
 
 .btn-donate {}
 .btn-donate:active { background-color:lime; }
+
+
+
+/* -------------------------------------------------------------------------------- */
+/* --- MOBILE STYLES --- */
+/* -------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1024px) {
+
+  .jumbotron .container h1 { font-size:48px; }
+  .jumbotron .cell img { width:150px; }
+  .jumbotron .cell .btn-lg { font-size:100%; font-weight:500; }
+  .jumbotron .alert p { font-size:18px; }
+
+  .row.campaign-feature .panel.campaign img { width:100%; height:auto; }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .jumbotron .container h1 { font-size:36px; }
+  .jumbotron .col-md-6 { float:left; width:50%; }
+
+  .row.campaign-feature .col-md-3 { float:left; width:50%; }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+  .navbar-brand { margin-left:20px !important; }
+  .navbar-toggle { margin-bottom:4px; }
+  .navbar-collapse { background:#ffffff; padding:5px; }
+    .navbar-collapse .nav, .navbar-collapse .nav.nav-pills { display:block; margin-right:10px; }
+//      .navbar-collapse .nav-pills>li { float:none; }
+      .navbar-collapse .nav .menu-item { display:block; }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .navbar-description { font-size:14px; }
+  .jumbotron .cell img { display:none; }
+
+  .row.campaign-feature .panel.campaign img { width:100%; height:auto; }
+
+}
+
+@media only screen and (max-width: 320px) {
+
+  .navbar-description { display:none; width:35%; font-size:12px; }
+
+      .navbar-collapse .nav-pills>li { float:none; }
+      .navbar-collapse .nav .menu-item { display:block; }
+
+  .jumbotron .col-md-6 { float:none; width:100%; }
+
+  .row.campaign-feature .col-md-3 { float:none; width:100%; }
+
+}
